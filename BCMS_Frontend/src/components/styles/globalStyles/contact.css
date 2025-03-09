@@ -1,0 +1,93 @@
+.lets_talk {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  display: grid; /* Enable grid layout */
+  grid-template-columns: 30% 70%; /* Create two columns with respective widths */
+}
+.lets_talk_para {
+  margin: 10px;
+  text-align: justify;
+}
+.mandatory {
+  color: red; /* Set text color to red */
+}
+
+.lets_talk_form {
+  overflow: hidden; /* Hide overflowing content */
+  box-shadow: 0 0 20px lightblue; /* Add a glowing effect around the form */
+  border-radius: 5px; /* Add rounded corners */
+  width: 80%; /* Set form width to 80% of its container */
+  margin: auto; /* Center the form horizontally */
+  padding: 20px; /* Add padding inside the form */
+}
+
+.lets_talk_form label {
+  display: block; /* Display labels as block elements */
+  font-size: 20px; /* Set label font size */
+}
+
+.lets_talk_form input {
+  padding: 8px; /* Add padding inside input fields */
+  width: 90%; /* Set input width */
+  border: 0; /* Remove border */
+  border-radius: 5px; /* Add rounded corners to inputs */
+}
+
+.lets_talk_form input:focus {
+  outline: 3px solid lightblue; /* Add blue border when input is focused */
+}
+
+.lets_talk_form p {
+  font-size: 15px; /* Set font size for text */
+}
+
+.lets_talk_form textarea {
+  width: 90%; /* Set textarea width */
+  outline: none; /* Remove focus outline */
+  border: 0; /* Remove border */
+  height: 10vh; /* Set textarea height */
+  padding: 10px; /* Add padding inside the textarea */
+  border-radius: 5px; /* Add rounded corners */
+  resize: none;
+  font-family: "Arial";
+}
+
+.lets_talk_form button {
+  display: block; /* Make button a block element */
+  width: 10rem; /* Set button width */
+  padding: 10px; /* Add padding inside the button */
+  border-radius: 50px; /* Make the button circular */
+  border: 0; /* Remove border */
+  margin: auto; /* Center the button horizontally */
+  font-size: 20px; /* Set button font size */
+  font-weight: bold; /* Make the text bold */
+  color: #ffff; /* Set text color to white */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: 0.3s ease-in-out; /* Add smooth transition on hover */
+  background-color: orange; /* Set button background color */
+}
+
+.lets_talk_form button:hover {
+  background-color: #000; /* Change button background color on hover */
+}
+
+/* Responsive Style */
+@media only screen and (max-width: 1080px) {
+  .lets_talk {
+    transition: all 0.5s ease-in-out;
+    grid-template-columns: 100%;
+    width: 100%;
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .lets_talk_form label,
+  .lets_talk_form input {
+    font-size: 25px;
+  }
+  .lets_talk_form {
+    margin: auto;
+    width: 75%;
+  }
+}

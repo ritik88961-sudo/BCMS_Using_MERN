@@ -1,0 +1,91 @@
+.employee-container {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+.employee-management {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.employee-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.employee-form input,
+.user-add-box input,
+.user-add-box select {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.user-add-box input,
+.user-add-box select {
+  margin: 10px;
+}
+
+.employee-form button,
+.user-add-box button {
+  width: 100%;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.employee-form button:hover {
+  background: #0056b3;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table th,
+.employee-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: black;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+.edit-btn:hover {
+  background: #e0a800;
+}
+@media (max-width: 600px) {
+  .employee-form input {
+    width: 100%;
+  }
+
+  .employee-table th,
+  .employee-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

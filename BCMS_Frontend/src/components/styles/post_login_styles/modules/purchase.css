@@ -1,0 +1,203 @@
+.purchase-form-container {
+  width: 90%;
+  background: #ffffff;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Form Heading */
+.purchase-form-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Form Fields */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Form Input Focus */
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Submit Button */
+#submit,
+#cancel {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+#submit:hover {
+  background: #0056b3;
+}
+#addProduct {
+  width: 30%;
+  padding: 12px;
+  background: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+/* Purchase List Container */
+.purchase-list-container {
+  background: #ffffff;
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  overflow-x: scroll;
+}
+
+/* Table Styling */
+.purchase-form-container table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+
+.purchase-form-container th,
+.purchase-form-container td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.purchase-form-container th {
+  background: #007bff;
+  color: white;
+}
+
+/* Alternate Row Colors */
+.purchase-form-container tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Loading & No Data Message */
+.loading,
+.no-data {
+  font-size: 18px;
+  color: #666;
+  margin-top: 20px;
+}
+/* Edit Button */
+.edit-btn {
+  background: #ffc107;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Modal Styling */
+.purchase-form-container .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.purchase-form-container .modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+}
+
+/* Form Styling */
+.purchase-form-container .modal-content input,
+.purchase-form-container .modal-content select {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Close Button */
+.purchase-form-container .close-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .purchase-list-container {
+    width: 95%;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .purchase-form-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-group input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}

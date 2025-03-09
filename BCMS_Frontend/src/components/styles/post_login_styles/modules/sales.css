@@ -1,0 +1,354 @@
+/* Sale Form Container */
+.sale-form-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.sale-form-container:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Elements */
+.sale-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.sale-form-container label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.sale-form-container input,
+.sale-form-container select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.sale-form-container input:focus,
+.sale-form-container select:.sale-form-container focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Sale Button */
+.sale-btn {
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sale-btn:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sale-form-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .sale-form-container input,
+  .sale-form-container select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .sale-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.sales-module {
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.sale-form-container h2 {
+  text-align: center;
+}
+
+.product_details {
+  width: 100%;
+  margin: auto;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.product-table {
+  width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.product-table th,
+.product-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  width: fit-content;
+}
+.product-table th {
+  background-color: #4caf50;
+  color: white;
+}
+.analysis_charts {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: auto;
+  gap: 10px;
+}
+/* Chart Containers */
+#salesPerformance,
+#salesTargetVsActual {
+  width: 100%;
+  margin: 0 auto;
+  /*      padding: 20px 0;*/
+}
+/* Sales Form Styles */
+.sales-form {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.sales-form input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Notification Styles */
+.notification {
+  background-color: red;
+  position: absolute;
+  left: 50%;
+  border-radius: 10px;
+  box-shadow: 10px 4px 50px rgba(0, 0, 0, 0.2);
+  color: #ffff;
+  padding: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  max-height: 0;
+  max-width: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+
+/* Search Bar */
+.search-bar {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* SalesReport.css */
+.sales-report {
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #4caf50;
+}
+
+.charts-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 200%;
+  gap: 20px;
+  justify-content: center;
+}
+
+.chart-card {
+  width: 200%;
+  max-width: 500px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+}
+
+.chart-card h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.report-summary {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.report-summary h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.summary-item {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.summary-item strong {
+  color: #4caf50;
+}
+
+/* Individual Product Sales Table */
+.product-sales-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.product-sales-table th,
+.product-sales-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.product-sales-table th {
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+}
+
+.product-sales-table td {
+  font-size: 16px;
+}
+
+.product-sales-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .chart-card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .chart-card h2 {
+    font-size: 20px;
+  }
+
+  .summary-item p {
+    font-size: 16px;
+  }
+
+  .product-sales-table th,
+  .product-sales-table td {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .sales-module {
+    padding: 0;
+    text-align: left;
+    width: 90%;
+  }
+  .analysis_charts {
+    width: 100%;
+    grid-template-columns: 100%;
+    place-items: center;
+  }
+  #salesPerformance,
+  #salesTargetVsActual {
+    font-size: 20px;
+    margin: 0;
+    width: 80vw;
+  }
+  .product-table {
+    table-layout: fixed;
+    word-wrap: break-word;
+    font-size: 15px;
+  }
+  .product-table th,
+  .product-table td {
+    padding: 0;
+  }
+  .charts-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  .analysis_charts {
+    place-items: left;
+  }
+  #salesPerformance,
+  #salesTargetVsActual {
+    width: 80%;
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 420px) {
+  #salesPerformance,
+  #salesTargetVsActual {
+    width: 300px;
+    height: 50vh;
+    place-items: left;
+  }
+}

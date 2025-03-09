@@ -1,0 +1,49 @@
+.place {
+  margin: auto;
+  width: 80%;
+}
+.place h2 span {
+  border-bottom: 2px solid red; /* Add a red underline */
+  color: red; /* Set the text color to red */
+}
+.place_para {
+  text-align: justify;
+}
+.place_item {
+  display: grid; /* Enable grid layout for place items */
+  grid-template-columns: 40% 60%; /* Create two columns with respective widths */
+}
+
+.place_info {
+  display: grid; /* Enable grid layout for place info */
+  margin: 10px; /* Center the grid horizontally */
+  padding: 10px; /* Add padding around the grid */
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+  gap: 20px; /* Add spacing between grid items */
+  text-align: center;
+}
+
+.place_info img {
+  width: 100px; /* Set image width */
+  height: 100px; /* Set image height */
+  border-radius: 50%; /* Make the image circular */
+}
+
+.modules {
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+@media only screen and (max-width: 1020px) {
+  .place_item {
+    grid-template-columns: 100%;
+  }
+}
+@media only screen and (max-width: 601px) {
+  .place h2,
+  .place span {
+    font-family: "calibri";
+    font-size: 20px;
+  }
+  .place_info {
+    grid-template-columns: 50% 50%;
+  }
+}

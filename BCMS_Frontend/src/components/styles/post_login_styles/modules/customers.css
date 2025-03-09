@@ -1,0 +1,51 @@
+/* Container */
+.container {
+  min-height: 100vh;
+  background: #f4f4f4;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Loading Text */
+.loading {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Grid Layout */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Card Styling */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .grid {
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+}

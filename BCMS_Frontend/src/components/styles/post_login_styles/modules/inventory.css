@@ -1,0 +1,60 @@
+/* Inventory Container */
+.inventory-container {
+  background: #ffffff;
+  margin: auto;
+  width: 90%;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  overflow-x: scroll;
+}
+
+/* Table Styling */
+.inventory-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.inventory-container th,
+.inventory-container td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.inventory-container th {
+  background: #007bff;
+  color: white;
+}
+
+/* Alternate Row Colors */
+.inventory-container tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Loading & No Data Message */
+.loading,
+.no-data {
+  font-size: 18px;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .inventory-container {
+    max-width: 95%;
+  }
+
+  .inventory-container table {
+    font-size: 14px;
+  }
+
+  .inventory-container th,
+  .inventory-container td {
+    padding: 8px;
+  }
+}

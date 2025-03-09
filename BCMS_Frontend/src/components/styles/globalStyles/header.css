@@ -1,0 +1,151 @@
+/* Header section style start */
+
+header {
+  color: #ffff; /* Setting text color in the header section */
+  position: sticky; /* set position sticky so that header wil fixed on top when scrolled */
+  top: 0;
+  z-index: 1000; /* Bring header to the front above other elements */
+  display: grid; /* Enable grid layout for organizing child elements */
+  grid-template-columns: 30% 30% 40%; /* create three columns in one row */
+  grid-template-rows: 80px; /* change the row size of header */
+  align-items: center; /* Align child elements vertically in the center */
+  background-color: rgb(0, 0, 0, 0.5);
+}
+header h1 {
+  font-family: "calibri"; /* Set the font family to Calibri */
+  font-size: 30px; /* Set the font size of the header text */
+  text-align: center; /* Center align the header text */
+}
+
+.brand_logo img {
+  width: 15rem;
+  /*Set the width of the logo to 50% of its container */
+  border-radius: 10px; /* Add rounded corners to the logo */
+  margin-top: 5px; /* Add spacing above the logo */
+}
+.menus ul {
+  list-style-type: none; /* Remove bullet points from the list items */
+}
+.menus ul li {
+  display: inline-block; /* Display list items in a horizontal row */
+  margin: 10px; /* Add spacing between menu items */
+}
+
+.menus ul li a,
+.login-btn span {
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from menu links */
+  color: #ffff; /* Set the text color to white */
+  padding: 10px; /* Add padding around the link text */
+  font-weight: bold; /* Make the link text bold */
+  border-radius: 50px; /* Make the link corners rounded */
+  transition: 0.3s ease-in-out; /* Add a smooth transition effect */
+  font-family: "calibri";
+}
+
+.login-btn {
+  background-color: #f78102; /* Set the background color to orange */
+  padding: 10px; /* Add padding inside the button */
+  border-radius: 50px; /* Round the button edges */
+  color: #ffff; /* Set the text color to white */
+}
+.login-btn:hover {
+  background-color: #4d4d4d; /* Change button background color on hover */
+}
+/* Hamburger Menu */
+.hamburger {
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background-color: white;
+  height: 5px;
+  width: 35px;
+  transition: all 0.3s;
+}
+/*Navigation bar style End*/
+/* ************************************************************************* */
+
+/* Header Style end */
+/*******************************************************************************/
+
+/* Responsive Header Style */
+@media only screen and (max-width: 1280px) {
+  .brand_name {
+    display: none;
+  }
+  header {
+    grid-template-columns: 30% 70%;
+  }
+  nav {
+    text-align: right;
+  }
+  .menus ul li a {
+    font-size: 18px;
+  }
+  .login-btn {
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  header {
+    grid-template-columns: 92% 8%;
+  }
+  .menus {
+    z-index: 210000;
+    transform: translateX(300%);
+    background-color: #4c4c4c;
+    overflow: hidden;
+    width: 50vw;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 80px;
+    text-align: center;
+    left: 0;
+    height: 100vh;
+  }
+  .menus ul li {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menus ul li a {
+    font-size: 25px;
+  }
+  .login-btn {
+    padding: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  .menus.active_menu {
+    transform: translateX(100%);
+  }
+  /* When active: Create the cross */
+  .hamburger span.active_menu:nth-child(1) {
+    transform: rotate(50deg);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30px;
+  }
+
+  .hamburger span.active_menu:nth-child(2) {
+    opacity: 0; /* Hide the middle bar */
+  }
+
+  .hamburger span.active_menu:nth-child(3) {
+    transform: rotate(-50deg);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 30px;
+  }
+}

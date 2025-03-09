@@ -1,0 +1,9 @@
+.dashboard_main_section {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+@media only screen and (max-width: 720px) {
+  .dashboard_main_section {
+    grid-template-columns: 100%;
+  }
+}

@@ -1,0 +1,208 @@
+.login_register_popup {
+  color: #ffff;
+  max-width: 0;
+  max-height: 0;
+  width: 500px;
+  opacity: 0;
+  margin: auto;
+  background: linear-gradient(40deg, #ff2770, #ff2770, #000, #0000);
+  border: 1px solid;
+  box-shadow: 0 10px 500px #ffff;
+  background-size: 200%;
+  transition: background-position 0.5s ease-in-out;
+  position: absolute;
+  top: 5px;
+  z-index: 10000;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  transition: all 0.5s ease-out;
+}
+.login_register_popup:hover {
+  background-position: right;
+}
+.login_register_popup.active_form {
+  display: block;
+}
+.close_Btn {
+  position: relative;
+  cursor: pointer;
+  right: -95%;
+}
+.close_Btn span {
+  display: inline-block;
+  width: 5px;
+  height: 30px;
+  background-color: #ffff;
+  position: absolute;
+}
+.close_Btn span:first-child {
+  rotate: 45deg;
+}
+.close_Btn span:last-child {
+  rotate: -45deg;
+}
+.login_register_form input,
+.login_register_form select {
+  padding: 10px;
+  display: block;
+  border-radius: 10px;
+  border: 0;
+  width: 90%;
+  box-shadow: 1px 1px 5px;
+  margin: 5px 0 10px 0;
+  outline: none;
+}
+.login_register_form input[type="submit"] {
+  width: 100px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-position 0.5s ease;
+  background: linear-gradient(40deg, #333333, #04fb25);
+  overflow: hidden;
+  background-size: 200%;
+  color: #ffff;
+
+  font-weight: bold;
+  font-size: 20px;
+}
+.login_register_form input[type="submit"]:hover {
+  /* background: linear-gradient(#ff2770, #25252b); */
+  background-position: bottom;
+}
+.register,
+.login {
+  max-width: 0;
+  max-height: 0;
+  opacity: 0;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.login_register_form label {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Arial";
+}
+.login_register_form form p {
+  font-size: 15px;
+  margin: auto;
+  width: 100%;
+  color: #000;
+}
+.login_register_form form p span {
+  background: none;
+  border: 0;
+  text-decoration: underline;
+  color: #0514e7;
+  cursor: pointer;
+  font-size: 15px;
+}
+.role {
+  width: 95%;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+  outline: none;
+}
+/* Container for overlay */
+.error-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Main dialog box */
+.error-dialog {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 90%;
+  width: 400px; /* Can adjust as needed */
+}
+
+/* Error message styling */
+.error-dialog p {
+  font-size: 16px;
+  color: #d9534f; /* Red color for errors */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Close button styling */
+.error-dialog button {
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.error-dialog button:hover {
+  background-color: #c9302c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .error-dialog {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .error-dialog p {
+    font-size: 14px;
+  }
+
+  .error-dialog button {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-dialog {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .error-dialog p {
+    font-size: 12px;
+  }
+
+  .error-dialog button {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .login_register_popup {
+    width: 50%;
+    overflow: scroll;
+    max-height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .login_register_popup {
+    width: 80%;
+  }
+}
+.active_form {
+  max-height: 100vh;
+  opacity: 1;
+  max-width: 100%;
+}

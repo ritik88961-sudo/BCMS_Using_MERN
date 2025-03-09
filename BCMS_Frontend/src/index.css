@@ -1,0 +1,37 @@
+/*****************************************************************************************/
+/* Global reset */
+body {
+  background-color: #e3e3e3;
+  margin: 0;
+  overflow-x: hidden;
+}
+/*****************************************************************************************/
+/* Global body setting */
+#root {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/*****************************************************************************************/
+/* Global main section setting */
+main {
+  flex-grow: 1;
+}
+/*****************************************************************************************/
+
+/* Global h2 and paragraph setting */
+h2 {
+  font-family: "Arial Black"; /* Set the font to Arial Black */
+  text-align: center; /* Center align the heading */
+}
+
+p {
+  font-size: 20px; /* Set paragraph text size */
+  font-family: "Arial"; /* Set paragraph font to Arial */
+}
+
+/* ******************************************************************************* */

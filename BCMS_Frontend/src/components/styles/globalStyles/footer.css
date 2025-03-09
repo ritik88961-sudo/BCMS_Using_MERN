@@ -1,0 +1,108 @@
+/* Footer section style start */
+footer {
+  justify-self: flex-end; /* Align footer content at the end */
+  margin-top: 20px; /* Add spacing above the footer */
+  height: 50vh; /* Set footer height */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Add semi-transparent black background */
+  color: #ffff; /* Set text color to white */
+  padding: 10px; /* Add padding inside the footer */
+  display: grid; /* Enable grid layout for footer */
+  grid-template-areas: "footer_logo links_module" "social_links social_links"; /* Define layout areas */
+}
+.footer_logo {
+  grid-area: footer_logo; /* Assign grid area for footer logo */
+}
+
+.links_module {
+  height: auto; /* Allow dynamic height adjustment */
+  grid-area: links_module; /* Assign grid area for links */
+  display: grid; /* Enable grid layout */
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+  gap: 10px; /* Add spacing between items */
+  place-items: center; /* Center the content */
+}
+
+.social_links {
+  margin: auto; /* Center the social links horizontally */
+  grid-area: social_links; /* Assign grid area for social links */
+  position: relative;
+  bottom: -20px;
+}
+
+.footer_logo img {
+  width: 10rem; /* Set logo width */
+  border-radius: 10px; /* Add rounded corners to the logo */
+}
+
+.links_module a {
+  display: block; /* Display links as block elements */
+  color: #ffff; /* Set link text color to white */
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px; /* Add padding around links */
+  font-size: 18px; /* Set font size */
+  font-family: "calibri";
+  text-decoration: underline;
+}
+
+.links_module a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}
+
+.location p {
+  font-size: 15px; /* Set text size */
+}
+
+.icon {
+  text-align: center; /* Center align icons */
+  width: 20px; /* Set icon width */
+  height: 20px; /* Set icon height */
+  font-size: 25px; /* Set icon font size */
+  margin: 10px; /* Add spacing around icons */
+  color: #000; /* Set icon color */
+  padding: 10px; /* Add padding inside icons */
+  background-color: #ffff; /* Set icon background to white */
+  border-radius: 50%; /* Make icons circular */
+}
+
+.icon:hover {
+  background-color: #4c4c4c; /* Change background color on hover */
+}
+
+/* ****************************************************************** */
+/* Footer section style end */
+
+@media only screen and (max-width: 1200px) {
+  footer {
+    height: auto; /* Allow footer height to adjust for small screens */
+    grid-template-areas:
+      "footer_logo"
+      "links_module"
+      "social_links"; /* Stack content vertically */
+    padding: 20px; /* Increase padding for readability */
+  }
+  .links_module {
+    grid-template-columns: 33.5% 33.5% 33.5%;
+  }
+  .footer h2 {
+    text-align: left;
+    margin: 0;
+  }
+  .footer a {
+    padding: 5px;
+    text-align: left;
+  }
+  .social_links a {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .links_module {
+    grid-template-columns: 50% 50%;
+  }
+}

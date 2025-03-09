@@ -1,0 +1,76 @@
+/* Hero section style start */
+.hero-section {
+  align-items: center; /* Align items in the center vertically */
+  width: 100%; /* Set the width of the section to full screen */
+  display: grid; /* Enable grid layout */
+  height: 100vh; /* Set the height to the full viewport */
+  background-image: url("../../../assets/images/hero.jpg"); /* Add a background image */
+  background-size: cover; /* Ensure the image covers the entire section */
+}
+
+.hero-text {
+  transition: 0.5s ease-in-out;
+  text-align: center; /* Center align the text */
+  border-radius: 10px; /* Add rounded corners */
+  text-transform: uppercase; /* Convert text to uppercase */
+  margin: auto; /* Center the element horizontally and vertically */
+  margin-top: 15%; /* Add top margin */
+  width: 30%; /* Set the width to 30% of the container */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Add a semi-transparent black background */
+  padding: 20px; /* Add padding inside the text box */
+  color: #ffff; /* Set the text color to white */
+}
+
+.hero-text a {
+  text-decoration: none; /* Remove underline from links */
+  color: #ffff; /* Set link text color to white */
+  border: 1px solid #ffff; /* Add a white border around the links */
+  padding: 12px; /* Add padding inside the links */
+  font-weight: bold; /* Make the link text bold */
+  margin: 10px; /* Add margin between links */
+  border-radius: 50px; /* Round the link corners */
+}
+
+.register_btn {
+  background-color: green; /* Set button background color to green */
+}
+
+.register_btn:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Change button background color on hover */
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Hero section style end */
+
+/* Responsive Style */
+@media only screen and (max-width: 1080px) {
+  .hero-text {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .hero-text {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .hero-text {
+    width: 90%;
+  }
+  .hero-text h2 {
+    font-size: 20px;
+  }
+  .hero-text a {
+    margin: 2px;
+    padding: 10px;
+  }
+}

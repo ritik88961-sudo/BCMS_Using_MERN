@@ -1,0 +1,70 @@
+/* AdminReport.css */
+.admin-report-container {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+}
+
+.admin-report-container h2, .admin-report-container h3 {
+  text-align: center;
+  color: #f8b400;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.admin-report-container .filters input {
+  background-color: #2a2a3a;
+  color: #ffffff;
+  border: 1px solid #555;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.admin-report-container .filters input:focus {
+  outline: none;
+  border-color: #f8b400;
+}
+
+.admin-report-container .data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-report-container .data-table th, .data-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.admin-report-container .data-table th {
+  background-color: #333344;
+  color: #f8b400;
+}
+
+.admin-report-container .data-table tr:hover {
+  background-color: #29293d;
+}
+
+.admin-report-container .data-table td {
+  color: #ddd;
+}
+
+.admin-report-container .chart-container {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #252540;
+  border-radius: 10px;;
+}
