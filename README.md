@@ -52,3 +52,53 @@ graph TD;
     Backend --> Reports;
     Database -->|Stores Data| Users & Transactions;
     Reports -->|Uses Data| Google_Charts;
+```
+🚀 **Getting Started**
+
+## 🔧 Installation
+
+### 1️⃣ Clone the Repository
+
+```sh
+git clone https://github.com/ritik88961-sudo/BCMS_Using_MERN
+cd BCMS_Using_MERN
+```
+
+### 2️⃣ Install Dependencies
+
+```sh
+# Backend
+cd BCMS_Backend
+npm install
+
+# Frontend
+cd BCMS_frontend
+npm install
+```
+
+### 3️⃣ Import Database Data
+Before running the application, import the database data that was exported using `mongodump`:
+
+```sh
+mongorestore --uri="your_mongodb_connection_string" --drop BCMS_Backend/DB/bcms
+```
+
+### 4️⃣ Set Up Environment Variables
+Create a `.env` file in the `backend` directory and add:
+
+```env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
+
+### 5️⃣ Run the Application
+
+```sh
+# Start Backend Server
+cd BCMS_Backend
+node app.js
+
+# Start Frontend
+cd BCMS_Frontend
+npm run dev
+```
